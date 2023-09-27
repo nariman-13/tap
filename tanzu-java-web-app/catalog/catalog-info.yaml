@@ -6,7 +6,7 @@ metadata:
     "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=tanzu-java-web-app"
     backstage.io/techdocs-ref: dir:./../..
   links:
-    - url: https://weatherforecast-csharp.dev-ns-01.devtap.evoila.digital
+    - url: https://tanzu-java-web-app.dev-ns-01.devtap.evoila.digital
       title: Tanzu Java Web App
       icon: catalog
 spec:
