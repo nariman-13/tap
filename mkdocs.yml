@@ -1,7 +1,6 @@
 site_name: Tanzu Java Web Application Documentation
 nav:
   - Home: index.md
-  - WeatherForecast: tanzu-java-web-app/README.md
 repo_url: https://github.com/nariman-13/tap.git
 plugins:
   - techdocs-core
