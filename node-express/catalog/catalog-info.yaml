@@ -10,7 +10,7 @@ metadata:
     - tanzu
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=node-express'
-     backstage.io/techdocs-ref: dir:./../..
+    backstage.io/techdocs-ref: dir:./../..
   links:
     - url: https://node-express.dev-ns-02.devtap.evoila.digital
       title: Node Express
