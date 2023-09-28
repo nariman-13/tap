@@ -9,7 +9,8 @@ metadata:
     - express
     - tanzu
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=node-express'
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=node-express
+     backstage.io/techdocs-ref: value
 spec:
   type: service
   lifecycle: experimental
