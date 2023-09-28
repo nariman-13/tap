@@ -10,6 +10,11 @@ metadata:
     - typescript
   annotations:
     "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=angular-frontend"
+     backstage.io/techdocs-ref: dir:./../..
+ links:
+  - url: http://angular-frontend.dev-ns-02.devtap.evoila.digital
+    title: Angular Frontend
+    icon: catalog 
 spec:
   type: website
   lifecycle: experimental
