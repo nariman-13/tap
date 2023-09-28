@@ -1,7 +1,7 @@
-site_name: Tanzu Java Web Application Documentation
+site_name: Angular Front-end Application
 nav:
   - Home: index.md
-  - WeatherForecast: tanzu-java-web-app/README.md
+  - Second Page: page2.md
 repo_url: https://github.com/nariman-13/tap.git
 plugins:
   - techdocs-core
