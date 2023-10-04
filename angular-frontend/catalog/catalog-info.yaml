@@ -32,12 +32,12 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: demo-team
-  system: demo-app # Or specify system name of your choice
+  owner: default-team
+  system: demo-app-angular # Or specify system name of your choice
   definition: |
     openapi: 3.0.1
     info:
-      title: Demo API
+      title: Demo API Angular
       description: defaultDescription
       version: '0.1'
     servers:
@@ -69,7 +69,7 @@ metadata:
   annotations:
     'backstage.io/techdocs-ref': dir:.
 spec:
-  owner: demo-team
+  owner: default-team
 --- 
 apiVersion: backstage.io/v1alpha1
 kind: System
@@ -79,7 +79,7 @@ metadata:
   annotations:
     'backstage.io/techdocs-ref': dir:.
 spec:
-  owner: demo-team
+  owner: default-team
   domain: demo-domain
 
 ---
