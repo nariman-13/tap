@@ -23,8 +23,8 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: demo-api
-  description: The demo API for Tanzu Developer Portal
+  name: demo-api-angular
+  description: The demo API for Angular
   links:
     - url: https://api.agify.io
       title: API Definition
@@ -60,3 +60,26 @@ spec:
                   schema:
                     type: string
                   examples: {}
+---                 
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: angular-domain
+  description: Demo Domain for Angular
+  annotations:
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  owner: demo-team
+--- 
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: angular-demo
+  description: Demo Application for angular demo
+  annotations:
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  owner: demo-team
+  domain: demo-domain
+
+---
