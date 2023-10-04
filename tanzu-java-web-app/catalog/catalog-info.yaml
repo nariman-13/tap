@@ -13,48 +13,26 @@ spec:
   type: service
   lifecycle: experimental
   owner: default-team
----  
+---
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: demo-api-java-web-app
   description: The demo API for java web app
   links:
-    - url: https://api.agify.io
+    - url: https://api.example.com/graphql  # Replace with your GraphQL API endpoint
       title: API Definition Java Web App
       icon: docs
 spec:
-  type: openapi
+  type: graphql  # Specify the desired API type, e.g., "graphql"
   lifecycle: experimental
   owner: default-team
   system: demo-app-java-web-app # Or specify system name of your choice
   definition: |
-    openapi: 3.0.1
-    info:
-      title: Demo API Java Web App
-      description: defaultDescription
-      version: '0.1'
-    servers:
-      - url: https://api.agify.io
-    paths:
-      /:
-        get:
-          description: Auto generated using Swagger Inspector
-          parameters:
-            - name: name
-              in: query
-              schema:
-                type: string
-              example: type_any_name
-          responses:
-            '200':
-              description: Auto generated using Swagger Inspector
-              content:
-                application/json; charset=utf-8:
-                  schema:
-                    type: string
-                  examples: {}
----                 
+    type Query {
+      hello: String
+    }
+---
 apiVersion: backstage.io/v1alpha1
 kind: Domain
 metadata:
@@ -64,7 +42,7 @@ metadata:
     'backstage.io/techdocs-ref': dir:.
 spec:
   owner: default-team
---- 
+---
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
@@ -75,5 +53,3 @@ metadata:
 spec:
   owner: default-team
   domain: demo-domain
-
----
