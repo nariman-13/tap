@@ -17,7 +17,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: demo-API-java-web-app
+  name: demo-api-java-web-app
   description: The demo API for java web app
   links:
     - url: https://api.agify.io
