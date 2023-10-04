@@ -66,6 +66,26 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
+   name: HealthScore
+  description: Health Score description for the current API.
+  apiscores:
+    scores:
+    - id: documentationReport
+      label: "Documentation Health"
+      value: 34.375
+      valueType: percentage
+      status: failed
+    - id: securityReport
+      label: "Security Score"
+      value: 70.0
+      valueType: percentage
+      status: warning
+    - id: openApiHealthReport
+      label: "OpenAPI Health"
+      value: 89.0625
+      valueType: percentage
+      status: passed
+    scoreDetailsURL:  VALIDATION-REPORT-URL-FOR-MORE-DETAILS
   name: demo-api
   description: The demo API for Tanzu Developer Portal
   links:
