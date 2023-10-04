@@ -54,7 +54,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: demo-team
+  owner: default-team
   system: demo-app # Or specify system name of your choice
   definition: |
     openapi: 3.0.1
