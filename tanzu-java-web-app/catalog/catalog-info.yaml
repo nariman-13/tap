@@ -18,7 +18,7 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: demo-java-web-app
-  description: The demo API for Angular
+  description: The demo API for java web app
   links:
     - url: https://api.agify.io
       title: API Definition
@@ -31,7 +31,7 @@ spec:
   definition: |
     openapi: 3.0.1
     info:
-      title: Demo API Angular
+      title: Demo API Java Web App
       description: defaultDescription
       version: '0.1'
     servers:
