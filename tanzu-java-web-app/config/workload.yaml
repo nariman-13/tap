@@ -13,6 +13,9 @@ spec:
       - name: BP_JVM_VERSION
         value: "11"
   params:
+  - name: testing_pipeline_matching_labels # referencing a specific pipeline
+    value:
+      apps.tanzu.vmware.com/language: golang
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
