@@ -8,6 +8,10 @@ metadata:
     apps.tanzu.vmware.com/has-tests: "true"
     app.kubernetes.io/part-of: node-express
 spec:
+  params:
+  - name: testing_pipeline_matching_labels # referencing a specific pipeline
+    value:
+      apps.tanzu.vmware.com/language: nodejs
   source:
     git:
       url: <https URL for your generated project's Git repository>
