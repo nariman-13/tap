@@ -14,6 +14,7 @@ spec:
       apps.tanzu.vmware.com/language: nodejs
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/nariman-13/tap
       ref:
-        branch: main
+        branch: workload-testing
+      subpath: node-express
