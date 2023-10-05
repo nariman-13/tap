@@ -13,7 +13,7 @@ spec:
       - name: BP_JVM_VERSION
         value: "11"
   params:
-  - name: testing_pipeline_matching_labels # referencing a specific pipeline
+  - name: test # referencing a specific pipeline
     value:
       apps.tanzu.vmware.com/language: java
   - name: annotations
