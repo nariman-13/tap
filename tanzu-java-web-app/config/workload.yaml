@@ -11,13 +11,14 @@ spec:
   build:
     env:
       - name: BP_JVM_VERSION
-        value: "11"
+        value: "17"
   params:
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/nariman-13/tap.git
       ref:
         branch: main
+        sub-path: tanzu-java-web-app
