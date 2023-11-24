@@ -8,11 +8,6 @@ import java.time.Period;
 @RestController
 public class HelloController {
 
-    @GetMapping("/")
-    public String index() {
-        return "Greetings from Spring Boot + Test!";
-    }
-
     @PostMapping("/calculateAge")
     public String calculateAge(@RequestParam String name, @RequestParam String dob) {
         // Parse the input string into a LocalDate object
