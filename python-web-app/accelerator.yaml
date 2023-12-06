@@ -1,7 +1,7 @@
 accelerator:
   displayName: Tanzu Python Test Web App - evoila
   description: A sample Python Flask web application built with Tanzu supply-chain
-  iconUrl: https://raw.githubusercontent.com/vmware-tanzu/application-accelerator-samples/main/python-web-app/pythonlogo.png
+  iconUrl: https://github.com/nariman-13/tap/blob/main/python-web-app/Logo-evoila_Logo-dunkel-1024x249.png
   tags:
   - python
   - flask
