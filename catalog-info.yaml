@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: tanzu-java-web-app
+  name: tanzu-java-web-app-mf3
   annotations:
-    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=tanzu-java-web-app"
+    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=tanzu-java-web-app-mf3"
     backstage.io/techdocs-ref: dir:./../.. #this has been used to generate the techdocs for the workload.
   links:
-    - url: https://tanzu-java-web-app.dev-ns-01.devtap.evoila.digital
+    - url: https://tanzu-java-web-app-mf3.dev-ns-03.tap.dieunkrauts.de/
       title: Tanzu Java Web App
       icon: catalog
 spec:
@@ -18,10 +18,10 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: API 
 metadata:
-  name: demo-api-java-web-app
+  name: demo-api-java-web-app-mf
   description: The demo API for java web app
   links:
-    - url: https://api.example.com/graphql  # could be replaced with the endpoint of our own graphql 
+    - url: https://tanzu-java-web-app-mf3.dev-ns-03.tap.dieunkrauts.de/swagger-ui/index.html  # could be replaced with the endpoint of our own graphql 
       title: API Definition Java Web App
       icon: docs
 spec:
