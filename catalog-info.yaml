@@ -4,7 +4,7 @@ metadata:
   name: tanzu-java-web-app-mf3
   annotations:
     "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=tanzu-java-web-app-mf3"
-    backstage.io/techdocs-ref: dir:./../.. #this has been used to generate the techdocs for the workload.
+#    backstage.io/techdocs-ref: dir:./../.. #this has been used to generate the techdocs for the workload.
   links:
     - url: https://tanzu-java-web-app-mf3.dev-ns-03.tap.dieunkrauts.de/
       title: Tanzu Java Web App
