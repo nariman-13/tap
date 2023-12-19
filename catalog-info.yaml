@@ -18,17 +18,17 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: API 
 metadata:
-  name: demo-api-java-web-app-mf
+  name: demo-api-tanzu-java-web-app-mf3
   description: The demo API for java web app
   links:
     - url: https://tanzu-java-web-app-mf3.dev-ns-03.tap.dieunkrauts.de/swagger-ui/index.html  # could be replaced with the endpoint of our own graphql 
       title: API Definition Java Web App
       icon: docs
 spec:
-  type: graphql  # Specify the desired API type, e.g., "graphql" or "openapi"
+  type: openapi  # Specify the desired API type, e.g., "graphql" or "openapi"
   lifecycle: experimental
   owner: default-team
-  system: demo-app-java-web-app # Or specify system name of your choice
+  system: tanzu-java-web-app-mf3 # Or specify system name of your choice
   definition: |
     type Query {
       hello: String
