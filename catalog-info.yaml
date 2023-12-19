@@ -13,6 +13,8 @@ spec:
   type: service
   lifecycle: experimental
   owner: default-team
+  providesApis:
+    - demo-api-tanzu-java-web-app-mf3
 ---
 #below are the added details for the API portal generation.
 apiVersion: backstage.io/v1alpha1
