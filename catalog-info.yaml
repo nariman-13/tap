@@ -13,7 +13,7 @@ spec:
   type: service
   lifecycle: experimental
   owner: default-team
-  providesApis:
+  consumesApis:
     - demo-api-tanzu-java-web-app-mf3
 ---
 #below are the added details for the API portal generation.
